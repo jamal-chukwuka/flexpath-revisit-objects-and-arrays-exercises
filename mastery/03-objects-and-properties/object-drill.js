@@ -19,26 +19,26 @@ const learner = {
   level: 3
 };
 
-// P1 — prediction:
-// reason:
+// P1 — prediction: // Jamal
+// reason: The dot accesses the user's name
 console.log(learner.name);
 
-// P2 — prediction:
-// reason:
+// P2 — prediction: Chicago
+// reason: Accessing using the bracket
 console.log(learner["city"]);
 
 const lookupKey = "level";
-// P3 — prediction:
-// reason:
+// P3 — prediction: Throws error
+// reason: The object isn't referenced
 console.log(learner[lookupKey]);
 
-// P4 — prediction:
-// reason:
+// P4 — prediction: undefined 
+// reason: It's not a property
 console.log(learner.language);
 
 learner.language = "Spanish";
-// P5 — prediction:
-// reason:
+// P5 — prediction: Spanish
+// reason: A new object property was created 
 console.log(learner.language);
 
 // After you have written all five predictions, run the file.
@@ -57,23 +57,28 @@ const engineer = {
 
 // TODO 1: Add a property named `city` with the value "Lagos"
 // using dot notation.
-
+engineer.city = "Lagos";
+console.log(engineer.city);
 
 // TODO 2: Add a property named `yearsExperience` with the value 4
 // using bracket notation.
-
+engineer["yearsExperience"] = 4;
+console.log(engineer.yearsExperience);
 
 // TODO 3: Change stack from "JavaScript" to "JavaScript + Java".
+engineer.stack = "JavaScript + Java";
+console.log(engineer.stack);
 
 
 // TODO 4: Create a variable named `dynamicKey` containing the string
 // "remote". Use that variable with bracket notation to add
 // remote: true to engineer. Do NOT write engineer.remote for this TODO.
-
+let dynamicKey = `remote`;
+engineer[dynamicKey] = true;
 
 // TODO 5: Delete the `yearsExperience` property.
 
-
+engineer.yearsExperience = null;
 console.log(engineer);
 
 
@@ -92,9 +97,9 @@ developer.name = "Nia";
 
 // P6 — BEFORE execution, predict both results and explain where
 // JavaScript finds each property.
-// developer.name prediction:
-// where found:
-// developer.describeTeam() prediction:
+// developer.name prediction: Nia
+// where found: ??
+// developer.describeTeam() prediction: platform
 // where found:
 
 console.log(developer.name);
@@ -104,7 +109,7 @@ console.log(developer.describeTeam());
 // "frontend". Then predict what developer.describeTeam() will return
 // and explain why before running it.
 
-// prediction:
+// prediction: Don't know how
 // reason:
 
 
