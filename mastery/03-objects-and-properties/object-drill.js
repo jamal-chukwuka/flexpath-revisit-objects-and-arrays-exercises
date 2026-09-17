@@ -149,13 +149,21 @@ console.log(fixedResult);
 Answer in your own words:
 
 A. What question is JavaScript answering when it evaluates obj.key?
+    It's returning the value associated with key/indentifier.
 
 B. What usually happens when a requested property cannot be found on
    the object or anywhere in its prototype chain?
 
+   I believe it returns an error or undefined.
+
 C. In one or two sentences, distinguish a prototype from a class.
+   A prototype is what earlier versions of JS were based on. 
+   They're a series of objects that newly created objects are chained to. 
+   A class is different because you can't override a prototype or inherit from it.
 
 D. When do you need bracket notation rather than ordinary dot notation?
+   Bracket notation is used when you want to assign the value a number.
 
 E. Which part of this drill was least automatic?
+   The questions. Deleting object properties.
 */
