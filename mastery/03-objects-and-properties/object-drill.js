@@ -78,7 +78,7 @@ engineer[dynamicKey] = true;
 
 // TODO 5: Delete the `yearsExperience` property.
 
-engineer.yearsExperience = null;
+delete engineer.yearsExperience;
 console.log(engineer);
 
 
