@@ -24,8 +24,12 @@ bike.wheels = 2;
 
 // COLD RESPONSE:
 // A. Which of these are bike's OWN properties: name, wheels, moves, describe?
+// Name and wheels are properties of bike. 
 // B. What does Object.hasOwn(bike, "moves") return, and why?
+// Not sure if I understand the OWN concept or the hasOwn method
 // C. What does "moves" in bike return? Why can B and C differ?
+// It says true. It can differ because bike is a new object with different properties, but methods in memory return booleans.
+
 
 
 // ============================================================
@@ -48,8 +52,10 @@ console.log(Object.hasOwn(userSettings, "theme"));
 
 // COLD RESPONSE:
 // Explain exactly where JavaScript finds `language` and `theme`.
+// Found from userSetting object and the language is es and the theme is light
+// be inherited.
 // What concept explains why `language` on baseSettings is not returned?
-
+/* The language is spanish now. Theme is light. The bottom two are strings. */
 
 // ============================================================
 // 3. TRACE THE CHAIN
@@ -62,10 +68,11 @@ child.own = "child";
 
 // COLD RESPONSE:
 // Without running code, write the lookup path JavaScript follows for:
-//   child.own
-//   child.level
-//   child.missing
+//   child.own - looks at child
+//   child.level - grandparent
+//   child.missing - doesn't exist
 // Where does the search stop?
+// Grandparent
 
 
 // ============================================================
@@ -84,10 +91,13 @@ const ada = new Person("Ada");
 
 // COLD RESPONSE:
 // A. Is `Person.prototype` the same concept as ada's own properties?
+// No, but I'm not clear why
 // B. Predict: Object.getPrototypeOf(ada) === Person.prototype
+// No, but Idk why
 // C. Is greet an own property of ada?
+// Not sure.
 // D. Why can ada.greet() still work?
-
+// Yes
 console.log(Object.getPrototypeOf(ada) === Person.prototype);
 console.log(Object.hasOwn(ada, "greet"));
 console.log(ada.greet());
@@ -109,8 +119,11 @@ checking.balance = 125;
 
 // COLD RESPONSE:
 // What does checking.label() return?
+  // Jamal : 125
 // When label() runs, what object does `this` refer to?
+// the object the method is on
 // Why does it NOT refer to accountBehavior?
+// Not sure.
 
 console.log(checking.label());
 
@@ -129,8 +142,8 @@ editor.canWrite = true;
 // COLD RESPONSE:
 // Explain precisely what is wrong with that statement.
 // Write TWO different expressions that answer two different questions:
-//   1. Does editor itself own canRead?
-//   2. Is canRead available through normal property lookup?
+//   1. Does editor itself own canRead? Not sure
+//   2. Is canRead available through normal property lookup? not sure
 
 
 // ============================================================
@@ -144,7 +157,16 @@ editor.canWrite = true;
 // - `member` inherits from userBehavior.
 // - member has own properties username="nina" and role="member".
 // - `admin` inherits from member but shadows role with "admin".
-//
+    const userBehavior = {
+           username: `nina`,
+           role: `member`,
+           member : function summary (){
+              console.log(username, role);
+           }
+    }
+
+    const admin = Object.create(userBehavior);
+    admin.role = `admin`;
 // Then demonstrate, with code and comments:
 //   a. member.summary()
 //   b. admin.summary()
