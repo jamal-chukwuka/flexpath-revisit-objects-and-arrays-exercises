@@ -2,4 +2,4 @@
 function copyRoster(roster) {
   // TODO
 }
-module.exports = copyRoster;
+export default copyRoster;

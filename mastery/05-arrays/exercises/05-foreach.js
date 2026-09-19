@@ -2,4 +2,4 @@
 function visitEach(items, visit) {
   // TODO
 }
-module.exports = visitEach;
+export default visitEach;

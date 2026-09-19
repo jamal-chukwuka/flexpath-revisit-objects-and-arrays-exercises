@@ -2,4 +2,4 @@
 function findUserById(users, targetId) {
   // TODO
 }
-module.exports = findUserById;
+export default findUserById;

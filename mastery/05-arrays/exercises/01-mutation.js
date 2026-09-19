@@ -2,4 +2,4 @@
 function appendValue(items, value) {
   // TODO
 }
-module.exports = appendValue;
+export default appendValue;

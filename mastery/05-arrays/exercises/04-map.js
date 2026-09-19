@@ -2,4 +2,4 @@
 function userNames(users) {
   // TODO
 }
-module.exports = userNames;
+export default userNames;
