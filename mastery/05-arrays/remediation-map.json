@@ -1,0 +1,8 @@
+{
+  "01-mutation": {"concept":"array mutation and object identity","resourceKeys":["mdn-array-push","mdn-array"]},
+  "02-find": {"concept":"find callback predicate, callback return value, first-match behavior","resourceKeys":["mdn-array-find","mdn-arrow-functions"]},
+  "03-filter": {"concept":"filter callback predicate and multi-match selection","resourceKeys":["mdn-array-filter"]},
+  "04-map": {"concept":"map callback return value and one-to-one transformation","resourceKeys":["mdn-array-map"]},
+  "05-foreach": {"concept":"forEach side effects and return contract","resourceKeys":["mdn-array-foreach"]},
+  "06-shallow-copy": {"concept":"shallow copying, outer identity, nested reference sharing","resourceKeys":["mdn-array","mdn-shallow-copy"]}
+}
