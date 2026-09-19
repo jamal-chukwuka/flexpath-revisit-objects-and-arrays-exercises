@@ -26,9 +26,10 @@ bike.wheels = 2;
 // A. Which of these are bike's OWN properties: name, wheels, moves, describe?
 // Name and wheels are properties of bike. 
 // B. What does Object.hasOwn(bike, "moves") return, and why?
-// Not sure if I understand the OWN concept or the hasOwn method
+// It returns false because the property belongs to the bike object's prototype. 
 // C. What does "moves" in bike return? Why can B and C differ?
-// It says true. It can differ because bike is a new object with different properties, but methods in memory return booleans.
+// It returns true because it's accessing the prototype chain to find the moves property. 
+// Object.hasOWN is asking whether the property belongs to the bike object. It's not looking for the value.
 
 
 
