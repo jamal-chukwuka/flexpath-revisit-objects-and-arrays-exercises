@@ -134,6 +134,7 @@ const orders = [
   { id: 104, customer: "Kenji", total: 60, paid: false }
 ];
 // K1. Create a new array containing names of all paid customers.
+
 // K2. Find the order with id 103.
 // K3. Create a new array containing orders with total >= 70.
 // K4. Create a new array where every order total is increased by 10.
