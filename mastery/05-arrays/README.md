@@ -1,9 +1,11 @@
-# Section 5 — Arrays Mastery Pilot
+# Section 5 — Arrays Extra Practice
 
-Complete the conceptual retrieval and coding exercises cold, then run:
+Use these optional exercises for additional practice with arrays.
+
+Complete the conceptual questions and coding exercises before checking your work, then run:
 
 ```bash
 node mastery/05-arrays/tests/run-tests.js
 ```
 
-Preserve and push the first attempt before repairing any failures.
+If you want to compare attempts over time, commit your first attempt before making corrections.
