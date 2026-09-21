@@ -8,4 +8,8 @@
  */
 export default function completedBillableTotal(records) {
   // Write your solution here.
+    const initialValue = 0;
+    const totalBillableAmount = records.reduce((accum, currVal) => accum * currVal, initialValue);
+    return totalBillableAmount;
+
 }

@@ -8,5 +8,5 @@
  * Do not mutate tasks.
  */
 export default function taskValidation(tasks) {
-  // Write your solution here.
+    return tasks.forin((task) => task.hasBlocked == "blocked" && task.allAssigned != "");
 }

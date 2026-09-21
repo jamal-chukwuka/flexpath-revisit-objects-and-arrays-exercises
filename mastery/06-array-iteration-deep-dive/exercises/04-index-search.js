@@ -5,4 +5,13 @@
  */
 export default function firstReadingAbove(readings, threshold) {
   // Write your solution here.
+  indexofFirst = readings.findIndex((book) => book > threshold);
+
+  if(indexofFirst < 0 ){
+    return -1
+  } else {
+    return indexofFirst;
+  }
+
+  
 }
