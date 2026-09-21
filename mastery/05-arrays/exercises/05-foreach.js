@@ -13,6 +13,6 @@
  * - Choose the iteration approach yourself.
  */
 function visitEach(items, visit) {
-  // Write your solution here.
+    return items.forEach((item) => visit(item));
 }
 export default visitEach;

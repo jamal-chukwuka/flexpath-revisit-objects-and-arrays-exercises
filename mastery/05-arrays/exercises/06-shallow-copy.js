@@ -15,5 +15,6 @@
  */
 function copyRoster(roster) {
   // Write your solution here.
+  return [...roster];
 }
 export default copyRoster;

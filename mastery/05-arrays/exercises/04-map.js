@@ -14,6 +14,6 @@
  * - Decide for yourself how to perform the transformation.
  */
 function userNames(users) {
-  // Write your solution here.
+    return users.map((user) => user.name);
 }
 export default userNames;

@@ -14,5 +14,6 @@
  */
 function findUserById(users, targetId) {
   // Write your solution here.
+  return users.find((user) => user.id == targetId);
 }
 export default findUserById;

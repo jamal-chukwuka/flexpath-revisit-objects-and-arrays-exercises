@@ -13,5 +13,7 @@
  */
 function appendValue(items, value) {
   // Write your solution here.
+  items.push(value);
+  return items;
 }
 export default appendValue;

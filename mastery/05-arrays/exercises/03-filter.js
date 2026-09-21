@@ -14,5 +14,6 @@
  */
 function ordersWithStatus(orders, status) {
   // Write your solution here.
+  return orders.filter((order) => order.status === status);
 }
 export default ordersWithStatus;
